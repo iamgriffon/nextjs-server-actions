@@ -1,54 +1,8 @@
 # "Next.js Server Actions"
 
----
+- Projeto criado como prova de conceito para renderização server-side vs client-side
 
-### Author Links
-
-👋 Hello, I'm Dave Gray.
-
-👉 [My Courses](https://courses.davegray.codes/)
-
-✅ [Check out my YouTube Channel with hundreds of tutorials](https://www.youtube.com/DaveGrayTeachesCode).
-
-🚩 [Subscribe to my channel](https://bit.ly/3nGHmNn)
-
-☕ [Buy Me A Coffee](https://buymeacoffee.com/DaveGray)
-
-🚀 Follow Me:
-
-- [Twitter](https://twitter.com/yesdavidgray)
-- [LinkedIn](https://www.linkedin.com/in/davidagray/)
-- [Blog](https://yesdavidgray.com)
-- [Reddit](https://www.reddit.com/user/DaveOnEleven)
-
----
-
-### Description
-
-📺 [YouTube Video](https://youtu.be/BmUsDuLO598) for this repository.
-
-
-### 📚 Recommended Prerequisites
-- 🔗 [Next.js 13 for Beginners](https://youtu.be/843nec-IvW0)
-
----
-
-### 🎓 Academic Honesty
-
-**DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiarism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
-
----
-
-### ⚙ Free Web Dev Tools
-- 🔗 [Google Chrome Web Browser](https://google.com/chrome/)
-- 🔗 [Visual Studio Code (aka VS Code)](https://code.visualstudio.com/)
-- 🔗 [ES7 React Snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
-
-### 📚 References
-- 🔗 [Next.js Official Site](https://nextjs.org/)
-- 🔗 [Next.js Docs: Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions)
-
-### 🚀 Project Dependencies
-- 🔗 [react-icons](https://www.npmjs.com/package/react-icons)
-- 🔗 [json-server](https://www.npmjs.com/package/json-server)
-
+| Mudança                                                     | Vantagens                                                                                                                                                                                                                                                                                                                                                                                                                       | Desvantagens                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Migração de Auth-Server de Client-side para Server-side** | - **Melhor segurança**: Credenciais não ficam expostas ao cliente, reduzindo riscos de ataques.<br> - **Menos dependência do estado do cliente**: Elimina problemas causados por bibliotecas de estado no cliente.<br> - **Experiência do usuário melhorada**: Carregamento do conteúdo autenticado mais rápido.<br> - **SEO melhorado**: Server-side rendering garante que motores de busca vejam o conteúdo com autenticação. | - **Carga maior no servidor**: Cada carregamento exige verificação de autenticação, o que aumenta o custo.<br> - **Maior complexidade de infraestrutura**: Necessidade de manter sessões ou cookies seguros.<br> - **Latência de rede**: A verificação no servidor pode causar atrasos para usuários distantes.<br> - **Cache limitado**: Cache de respostas pode ser mais complexo, impactando a performance. |
+| **Migração do Next.js 14.1.4 para 15**                      | - **Novas APIs e melhor suporte a TypeScript**: Código mais robusto e melhor controle de tipos.<br> - **Melhorias de performance**: Maior eficiência para SSR.<br> - **Autenticação integrada com App Router**: Experiência aprimorada para autenticação e controle de sessão.<br> - **Incremental Static Regeneration (ISR) aprimorado**: Útil para conteúdo dinâmico ou autorizado.                                           | - **Possível quebra de compatibilidade**: Alguns pacotes ou configurações podem precisar de ajustes.<br> - **Aprendizado e adaptação**: Equipe precisa se adaptar às mudanças.<br> - **Risco de instabilidade inicial**: Grandes atualizações podem introduzir novos bugs e comportamentos inesperados.                                                                                                        |
