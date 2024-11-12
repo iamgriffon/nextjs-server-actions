@@ -1,11 +1,10 @@
-import TodoList from "./components/TodoList"
-import AddTodo from "./components/AddTodo"
+import TodoList from "../components/server/TodoList"
+import AddTodo from "../components/server/AddTodo"
 
 export default function Home() {
   return (
     <>
       <AddTodo />
-      {/* @ts-expect-error Server Component */}
       <TodoList />
     </>
   )

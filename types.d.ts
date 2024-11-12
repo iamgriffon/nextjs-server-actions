@@ -1,4 +1,4 @@
-type Todo = {
+type TodoType = {
     userId: number,
     id: number,
     title: string,

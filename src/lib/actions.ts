@@ -22,7 +22,7 @@ export async function addTodo(data: FormData) {
 
 
 export async function deleteTodo(
-    todo: Todo
+    todo: TodoType
 ) {
     const res = await fetch(`http://127.0.0.1:3500/todos/${todo.id}`, {
         method: 'DELETE',
@@ -40,7 +40,7 @@ export async function deleteTodo(
 
 
 export async function updateTodo(
-    todo: Todo
+    todo: TodoType
 ) {
     const res = await fetch(`http://127.0.0.1:3500/todos/${todo.id}`, {
         method: 'PUT',
